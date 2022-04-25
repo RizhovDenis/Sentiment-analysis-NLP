@@ -17,6 +17,9 @@ I took data set on [kaggle competition](https://www.kaggle.com/competitions/word
 <p align="center">
     <h3 align="center">Long short-term memory</h3>
 </p>
+<p align="center">
+    <img src="./assets/lstm.png" />
+</p>
 
 The compact forms of the equations for the forward pass of an LSTM cell with a forget gate are:
 
@@ -45,10 +48,6 @@ h_t &= o_t \circ \sigma_h(c_t)
 * <math>\sigma_g</math>: sigmoid function.
 * <math>\sigma_c</math>: hyperbolic tangent function.
 * <math>\sigma_h</math>: hyperbolic tangent function, or as the peephole LSTM paper suggests, <math>\sigma_h(x) = x</math>.
-
-<p align="center">
-    <img src="./assets/lstm.png" />
-</p>
 
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
