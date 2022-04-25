@@ -47,9 +47,7 @@ h_t &= o_t \circ \sigma_h(c_t)
 #### Activation functions
 * <math>\sigma_g</math>: sigmoid function.
 * <math>\sigma_c</math>: hyperbolic tangent function.
-* <math>\sigma_h</math>: hyperbolic tangent function, or as the peephole LSTM paper suggests, <math>\sigma_h(x) = x</math>.
-
-$t_0$ \\ 
+* $<math>\sigma_h</math>$: hyperbolic tangent function, or as the peephole LSTM paper suggests, $<math>\sigma_h(x) = x</math>.$
 
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
