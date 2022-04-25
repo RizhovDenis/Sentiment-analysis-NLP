@@ -23,7 +23,12 @@ I took data set on [kaggle competition](https://www.kaggle.com/competitions/word
 
 The compact forms of the equations for the forward pass of an LSTM cell with a forget gate are:
 
-<div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=f_t%20%20%3D%20%5Csigma_g(W_%7Bf%7D%20x_t%20%2B%20U_%7Bf%7D%20h_%7Bt-1%7D%20%2B%20b_f)"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=f_t%20%26%3D%20%5Csigma_g(W_%7Bf%7D%20x_t%20%2B%20U_%7Bf%7D%20h_%7Bt-1%7D%20%2B%20b_f)%20%5C%5C%0Ai_t%20%26%3D%20%5Csigma_g(W_%7Bi%7D%20x_t%20%2B%20U_%7Bi%7D%20h_%7Bt-1%7D%20%2B%20b_i)%20%5C%5C%0Ao_t%20%26%3D%20%5Csigma_g(W_%7Bo%7D%20x_t%20%2B%20U_%7Bo%7D%20h_%7Bt-1%7D%20%2B%20b_o)%20%5C%5C%0A%5Ctilde%7Bc%7D_t%20%26%3D%20%5Csigma_c(W_%7Bc%7D%20x_t%20%2B%20U_%7Bc%7D%20h_%7Bt-1%7D%20%2B%20b_c)%20%5C%5C%0Ac_t%20%26%3D%20f_t%20%5Ccirc%20c_%7Bt-1%7D%20%2B%20i_t%20%5Ccirc%20%5Ctilde%7Bc%7D_t%20%5C%5C%0Ah_t%20%26%3D%20o_t%20%5Ccirc%20%5Csigma_h(c_t)"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=i_t%20%3D%20%5Csigma_g(W_%7Bi%7D%20x_t%20%2B%20U_%7Bi%7D%20h_%7Bt-1%7D%20%2B%20b_i)%20%5C%5C"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=o_t%20%3D%20%5Csigma_g(W_%7Bo%7D%20x_t%20%2B%20U_%7Bo%7D%20h_%7Bt-1%7D%20%2B%20b_o)%20%5C%5C"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctilde%7Bc%7D_t%20%3D%20%5Csigma_c(W_%7Bc%7D%20x_t%20%2B%20U_%7Bc%7D%20h_%7Bt-1%7D%20%2B%20b_c)%20%5C%5C"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=c_t%20%3D%20f_t%20%5Ccirc%20c_%7Bt-1%7D%20%2B%20i_t%20%5Ccirc%20%5Ctilde%7Bc%7D_t%20%5C%5C"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=h_t%20%3D%20o_t%20%5Ccirc%20%5Csigma_h(c_t)"></div>
 
 :<math>
 \begin{align}
