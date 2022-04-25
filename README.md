@@ -14,12 +14,9 @@ The project on segmentation group of people who made possitive or negative comme
 ## Data set description
 I took data set on [kaggle competition](https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview/description)
 ## Structure neural networks
-**Long short-term memory**
-
-<p align="center">
-    <img src="./assets/lstm.png" />
-</p>
+=== Long short-term memory ===
 The compact forms of the equations for the forward pass of an LSTM cell with a forget gate are:
+
 :<math>
 \begin{align}
 f_t &= \sigma_g(W_{f} x_t + U_{f} h_{t-1} + b_f) \\
@@ -30,7 +27,8 @@ c_t &= f_t \circ c_{t-1} + i_t \circ \tilde{c}_t \\
 h_t &= o_t \circ \sigma_h(c_t)
 \end{align}
 </math>
-Variables:
+
+==== Variables ====
 *<math>x_t \in \mathbb{R}^{d}</math>: input vector to the LSTM unit
 *<math>f_t \in {(0,1)}^{h}</math>: forget gate's activation vector
 *<math>i_t \in {(0,1)}^{h}</math>: input/update gate's activation vector
@@ -39,9 +37,15 @@ Variables:
 *<math>\tilde{c}_t \in {(-1,1)}^{h}</math>: cell input activation vector
 *<math>c_t \in \mathbb{R}^{h}</math>: cell state vector
 *<math>W \in \mathbb{R}^{h \times d}</math>, <math>U \in \mathbb{R}^{h \times h} </math> and <math>b \in \mathbb{R}^{h}</math>: weight matrices and bias vector parameters which need to be learned during training
-Activation functions:
+
+<p align="center">
+    <img src="./assets/lstm.png" />
+</p>
+
+==== Activation functions ====
 * <math>\sigma_g</math>: sigmoid function.
 * <math>\sigma_c</math>: hyperbolic tangent function.
 * <math>\sigma_h</math>: hyperbolic tangent function, or as the peephole LSTM paper suggests, <math>\sigma_h(x) = x</math>.
+
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
