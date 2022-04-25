@@ -12,9 +12,12 @@ The project on segmentation group of people who made possitive or negative comme
 - [sklearn](https://scikit-learn.org/stable/)
 - [Numpy](https://numpy.org/)
 ## Data set description
-I took data set on [kaggle competition](https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview/description)
+I took data set on [kaggle competition](https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview/description).
 ## Structure neural networks
-=== Long short-term memory ===
+<p align="center">
+    <h3 align="center">Long short-term memory</h3>
+</p>
+
 The compact forms of the equations for the forward pass of an LSTM cell with a forget gate are:
 
 :<math>
