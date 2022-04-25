@@ -23,7 +23,7 @@ I took data set on [kaggle competition](https://www.kaggle.com/competitions/word
 
 The compact forms of the equations for the forward pass of an LSTM cell with a forget gate are:
 
-\section{Math Formulas}
+<div align="center"><img style="background: white;" src="../svg/eux0xxSPqH.svg"></div>
 
 :<math>
 \begin{align}
