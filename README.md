@@ -31,7 +31,7 @@ h_t &= o_t \circ \sigma_h(c_t)
 \end{align}
 </math>
 
-==== Variables ====
+#### Variables
 *<math>x_t \in \mathbb{R}^{d}</math>: input vector to the LSTM unit
 *<math>f_t \in {(0,1)}^{h}</math>: forget gate's activation vector
 *<math>i_t \in {(0,1)}^{h}</math>: input/update gate's activation vector
@@ -41,14 +41,14 @@ h_t &= o_t \circ \sigma_h(c_t)
 *<math>c_t \in \mathbb{R}^{h}</math>: cell state vector
 *<math>W \in \mathbb{R}^{h \times d}</math>, <math>U \in \mathbb{R}^{h \times h} </math> and <math>b \in \mathbb{R}^{h}</math>: weight matrices and bias vector parameters which need to be learned during training
 
-<p align="center">
-    <img src="./assets/lstm.png" />
-</p>
-
-==== Activation functions ====
+#### Activation functions
 * <math>\sigma_g</math>: sigmoid function.
 * <math>\sigma_c</math>: hyperbolic tangent function.
 * <math>\sigma_h</math>: hyperbolic tangent function, or as the peephole LSTM paper suggests, <math>\sigma_h(x) = x</math>.
+
+<p align="center">
+    <img src="./assets/lstm.png" />
+</p>
 
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
