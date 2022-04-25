@@ -32,8 +32,8 @@ The compact forms of the equations for the forward pass of an LSTM cell with a f
 <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=h_t%20%3D%20o_t%20%5Ccirc%20%5Csigma_h(c_t)"></div>
 
 #### Variables
-<div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=x_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bd%7D%3A%20input%20vector%20to%20the%20LSTM%20unit%0Af_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D%3A%20forget%20gate's%20activation%20vector%0Ai_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D%3A%20input%2Fupdate%20gate's%20activation%20vector%0Ao_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D%3A%20output%20gate's%20activation%20vector%0Ah_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D%3A%20hidden%20state%20vector%20also%20known%20as%20output%20vector%20of%20the%20LSTM%20unit%0A%5Ctilde%7Bc%7D_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D%3A%20cell%20input%20activation%20vector%0Ac_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D%3A%20cell%20state%20vector%0AW%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20d%7D%2C%20U%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20h%7D%20%20and%20b%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D%3A%20weight%20matrices%20and%20bias%20vector%20parameters%20which%20need%20to%20be%20learned%20during%20training"></div>
-*<math>x_t \in \mathbb{R}^{d}</math>: input vector to the LSTM unit
+
+*<div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=x_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bd%7D"></div>: input vector to the LSTM unit
 *<math>f_t \in {(0,1)}^{h}</math>: forget gate's activation vector
 *<math>i_t \in {(0,1)}^{h}</math>: input/update gate's activation vector
 *<math>o_t \in {(0,1)}^{h}</math>: output gate's activation vector
@@ -51,4 +51,4 @@ The compact forms of the equations for the forward pass of an LSTM cell with a f
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
 # Sources
-- [wikipedia](https://en.wikipedia.org/wiki/Long_short-term_memory)
+- [wikipedia.org](https://en.wikipedia.org/wiki/Long_short-term_memory)
