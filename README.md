@@ -5,6 +5,7 @@ The project on segmentation group of people who made possitive or negative comme
 - [Data set description](#data-set-description)
 - [Structure neural networks](#structure-neural-networks)
 - [Conclusion](#conclusion)
+- [Sources](#sources)
 ## Tech modules
 - [tensorflow](https://www.tensorflow.org/)
 - [nltk](https://www.nltk.org/)
@@ -30,17 +31,6 @@ The compact forms of the equations for the forward pass of an LSTM cell with a f
 <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=c_t%20%3D%20f_t%20%5Ccirc%20c_%7Bt-1%7D%20%2B%20i_t%20%5Ccirc%20%5Ctilde%7Bc%7D_t%20%5C%5C"></div>
 <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=h_t%20%3D%20o_t%20%5Ccirc%20%5Csigma_h(c_t)"></div>
 
-:<math>
-\begin{align}
-f_t &= \sigma_g(W_{f} x_t + U_{f} h_{t-1} + b_f) \\
-i_t &= \sigma_g(W_{i} x_t + U_{i} h_{t-1} + b_i) \\
-o_t &= \sigma_g(W_{o} x_t + U_{o} h_{t-1} + b_o) \\
-\tilde{c}_t &= \sigma_c(W_{c} x_t + U_{c} h_{t-1} + b_c) \\
-c_t &= f_t \circ c_{t-1} + i_t \circ \tilde{c}_t \\
-h_t &= o_t \circ \sigma_h(c_t)
-\end{align}
-</math>
-
 #### Variables
 *<math>x_t \in \mathbb{R}^{d}</math>: input vector to the LSTM unit
 *<math>f_t \in {(0,1)}^{h}</math>: forget gate's activation vector
@@ -52,9 +42,12 @@ h_t &= o_t \circ \sigma_h(c_t)
 *<math>W \in \mathbb{R}^{h \times d}</math>, <math>U \in \mathbb{R}^{h \times h} </math> and <math>b \in \mathbb{R}^{h}</math>: weight matrices and bias vector parameters which need to be learned during training
 
 #### Activation functions
-* <math>\sigma_g</math>: sigmoid function.
-* <math>\sigma_c</math>: hyperbolic tangent function.
-* <math>\sigma_h</math>: hyperbolic tangent function, or as the peephole LSTM paper suggests, <math>\sigma_h(x) = x</math>.
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_g%3A%20sigmoid%20function."></div>
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_c%3A%20hyperbolic%20tangent%20function."></div>
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h%3A%20hyperbolic%20tangent%20function%2C%20or%20as%20the%20peephole%20LSTM%20paper%20suggests%2C"></div>
+<div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h(x)%20%3D%20x"></div>
 
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
+# Sources
+- [wikipedia](https://en.wikipedia.org/wiki/Long_short-term_memory)
