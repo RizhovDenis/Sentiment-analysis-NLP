@@ -51,13 +51,13 @@ cell state vector;
 weight matrices and bias vector parameters which need to be learned during training.
 
 #### Activation functions
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_g%20"></div> 
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_g%20"></div> 
 sigmoid function;
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_c"></div>
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_c"></div>
 hyperbolic tangent function;
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h"></div>
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h"></div>
 hyperbolic tangent function, or as the peephole LSTM paper suggests,
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h(x)%20%3D%20x"></div>
+<div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_h(x)%20%3D%20x"></div>
 
 # Conclusion
 On test data accuracy is 84.45%. Hypotheses of improving results: Increase train data set; Upgrade neural network; Work with lemmatization.
