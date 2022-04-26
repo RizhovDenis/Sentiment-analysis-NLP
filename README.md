@@ -33,20 +33,20 @@ The compact forms of the equations for the forward pass of an LSTM cell with a f
 
 #### Variables
 
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=x_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bd%7D"></div>
-input vector to the LSTM unit
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=f_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div>
-forget gate's activation vector
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=i_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div> input/update gate's activation vector
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=o_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div>
-output gate's activation vector
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=h_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D%20"></div> hidden state vector also known as output vector of the LSTM unit
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctilde%7Bc%7D_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D"></div> 
-cell input activation vector
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=c_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D"></div>
-cell state vector
-* <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=W%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20d%7D%2C%20U%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20h%7D%5Ctextnormal%7B%20%7D%20and%20%5Ctextnormal%7B%20%7D%20b%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D"></div> 
-weight matrices and bias vector parameters which need to be learned during training
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=x_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bd%7D"></div>
+input vector to the LSTM unit;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=f_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div>
+forget gate's activation vector;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=i_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div> input/update gate's activation vector;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=o_t%20%5Cin%20%7B(0%2C1)%7D%5E%7Bh%7D"></div>
+output gate's activation vector;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=h_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D%20"></div> hidden state vector also known as output vector of the LSTM unit;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctilde%7Bc%7D_t%20%5Cin%20%7B(-1%2C1)%7D%5E%7Bh%7D"></div> 
+cell input activation vector;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=c_t%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D"></div>
+cell state vector;
+* <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=W%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20d%7D%2C%20U%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%20%5Ctimes%20h%7D%5Ctextnormal%7B%20%7D%20and%20%5Ctextnormal%7B%20%7D%20b%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bh%7D"></div> 
+weight matrices and bias vector parameters which need to be learned during training.
 
 #### Activation functions
 * <div align="left"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Csigma_g%3A%20sigmoid%20function."></div>
